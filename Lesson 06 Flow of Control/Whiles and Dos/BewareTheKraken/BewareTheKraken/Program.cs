@@ -11,7 +11,7 @@ namespace BewareTheKraken
 			string fish3 = "Goldfish";
 			int numberLoops = 1;
 
-		Console.WriteLine("Alrighty! Get those flippers and wetsuit on - we're going diving!");
+			Console.WriteLine("Alrighty! Get those flippers and wetsuit on - we're going diving!");
 			Console.WriteLine("Here we goooOOooOooo.....! *SPLASH*");
 
 			int depthDivedInFt = 0;
