@@ -32,13 +32,28 @@ namespace ForByFor
             ////updated
             
 
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("i is = {0}", i);
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine("j is = {0},", j);
+            //    }
+            //}
+
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("");
+                Console.Write("$");
+
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine("$");
+                    for (int k = 0; k < 3; k++)
+                    {
+                        Console.Write("@");
+                    }
+                    Console.Write("#");
                 }
+                Console.WriteLine("");
             }
         }
 	}

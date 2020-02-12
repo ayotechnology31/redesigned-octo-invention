@@ -35,7 +35,13 @@ namespace TwoForsAndTenYearsAgo
             ///updating second loop
             Console.WriteLine("\nI can count backwards using a different way too...");
 
-            for (int i = year; i >= year - 10; i--)
+            for (int i = year; i >= year - 20; i--)
+            {
+                Console.WriteLine((year - i) + " years ago would be " + i);
+            }
+
+            //if reduce by 20 years??
+            for (int i = year; i >= year - 200; i = i-20)
             {
                 Console.WriteLine((year - i) + " years ago would be " + i);
             }
