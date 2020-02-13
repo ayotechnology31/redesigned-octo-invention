@@ -20,6 +20,9 @@ namespace HealthyHearts
 			//Console.WriteLine("Your target HR Zone is " + age + " beats per minute");
 
 			int output;
+			int heartRate;
+			double heartRateMin;
+			double heartRateMax;
 
 			while (true)
 			{
@@ -28,9 +31,14 @@ namespace HealthyHearts
 
 				if (int.TryParse(input, out output))
 				{
-					Console.WriteLine("Your maximum heart rate should be " + (220 - output) + " beats per minute.");
-					
-					Console.WriteLine("Your target HR Zone is " + ((220 - output) * .50) +  " - " + ((220 - output) * .85) + " beats per minute");
+					heartRate = (220 - output);//this is an assignment not equals 
+
+					Console.WriteLine("Your maximum heart rate should be " + heartRate + " beats per minute.");
+
+					heartRateMin = (heartRate * .50);
+					heartRateMax = (heartRate * .85);
+
+					Console.WriteLine("Your target HR Zone is " + heartRateMin +  " - " + heartRateMax + " beats per minute");
 					break;
 				}
 			}
