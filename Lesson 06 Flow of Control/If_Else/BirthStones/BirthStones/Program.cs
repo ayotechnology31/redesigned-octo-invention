@@ -4,6 +4,11 @@ namespace BirthStones
 {
 	class Program
 	{
+		//Save your code in a file that matches the above - make it work!
+		//Write a program that asks for a number.
+		//Match that number against the month number.
+		//Printout the name of the month and its corresponding birth stone.
+		//Use Ifs and Elses to complete it.
 		static void Main(string[] args)
 		{
 			string input;

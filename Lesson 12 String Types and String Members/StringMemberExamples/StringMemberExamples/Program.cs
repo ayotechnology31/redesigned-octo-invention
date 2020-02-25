@@ -8,24 +8,24 @@ namespace StringMemberExamples
 		{
             /////Here are some examples of using the string members to manipulate strings. We recommend you copy these examples into a console application and play around with them. Change things, get to know your string members!
             ////Finding the indexes of all the letter e's in a string:
-            //string s = "I like cheese";
+            string s = "I like cheese";
 
-            //int i = 0; // start index
+            int i = 0; // start index
 
-            //// loop until we explicitly break
-            //while (true)
-            //{
-            //    // check for an e starting at index i
-            //    i = s.IndexOf("e", i);
+            // loop until we explicitly break
+            while (true)
+            {
+                // check for an e starting at index i
+                i = s.IndexOf("e", i);
 
-            //    if (i == -1)
-            //        break; // no more e's
-            //    else
-            //        Console.WriteLine($"Found an e at index: {i}");
+                if (i == -1)
+                    break; // no more e's
+                else
+                    Console.WriteLine($"Found an e at index: {i}");
 
-            //    // move to the next index after the e we found.
-            //    i++;
-            //}
+                // move to the next index after the e we found.
+                i++;
+            }
 
 
             /////Splitting a sentence into individual words

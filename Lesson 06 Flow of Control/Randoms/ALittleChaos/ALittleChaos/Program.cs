@@ -14,7 +14,7 @@ namespace ALittleChaos
             int num = randomizer.Next(100);
 
             Console.WriteLine("You can store a randomized result: " + num);
-            Console.WriteLine("And use it over and over againL: " + num + num);
+            Console.WriteLine("And use it over and over again: " + num + num);
 
             Console.WriteLine("Or just keep generating new values");
             Console.WriteLine("Here's a bunch of numbers from 0 - 100: ");

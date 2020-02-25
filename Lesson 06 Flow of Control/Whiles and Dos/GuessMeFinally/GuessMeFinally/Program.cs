@@ -6,6 +6,11 @@ namespace GuessMeFinally
 	{
 		static void Main(string[] args)
 		{
+			//Take your number guessing program and improve it EVEN MORE!
+			//Instead of letting the user only try once more if they get it wrong, make them keep going until they get it right!
+			//If they get it on the first try print out "Wow, nice guess! That was it!" otherwise print out "Finally, it's about time you got it!"
+			
+			
 			Random yourGuess = new Random();
 			int rightAnswer = yourGuess.Next(-10, 10);
 			string input;

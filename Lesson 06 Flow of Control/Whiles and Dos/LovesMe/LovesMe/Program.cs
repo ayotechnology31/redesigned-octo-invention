@@ -6,6 +6,11 @@ namespace LovesMe
 	{
 		static void Main(string[] args)
 		{
+
+			//Write a program that picks petals off a daisy(ordinarily 34 petals!) and prints out "It LOVES me NOT!" or "It LOVES me!" for every other petal until it runs out of petals.Feel free to print a happy message at the end too … since the result should ALWAYS be the same.
+		   
+		    //Did you write it in a while, or do/while loop ? Why ? (answer in a comment)
+
 			int pedals = 34;
 			int noPedals = 0;
 

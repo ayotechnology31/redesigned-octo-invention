@@ -6,6 +6,12 @@ namespace BewareTheKraken
 	{
 		static void Main(string[] args)
 		{
+			//Type in the following code - make it work!
+			//Add in another break command - ask the user if they want to stop! If they do, surface!
+			//Also, every time we go deeper, add in a printout for a random fish type!(at least 3 types!)
+			//What changes if you turn the while loop's condition to just read "true". Answer in a comment!
+
+
 			string fish1 = "Shark";
 			string fish2 = "Whale";
 			string fish3 = "Goldfish";

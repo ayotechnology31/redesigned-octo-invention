@@ -6,6 +6,9 @@ namespace MaybeItLovesMe
 	{
 		static void Main(string[] args)
 		{
+			//Change your daisy-prediction program from before, to have a RANDOM number of petals for the daisy (range is usually from 13 - 89 petals).
+			//If the last petal ends on "it loves me NOT" print "Awwww, bummer." otherwise print "Oh, wow! It really LOV
+
 			Random numberOfPedals = new Random();
 			int lastPedal = numberOfPedals.Next(13, 89);
 			int noPedals = 0;
