@@ -68,63 +68,105 @@ namespace RockPaperScissors
 						Random chooseObject = new Random();
 						int computerChoice = chooseObject.Next(1, 3);
 
-						if(int.TryParse(input, out userChoice))
+						if (int.TryParse(input, out userChoice))
 						{
 							numberLoops++;
-							if (computerChoice == userChoice)
+							///TIE
+							if (userChoice == rock && computerChoice == rock)
 							{
 								numberTie++;
-								if (numberLoops == rounds)
-								{
-									break;
-								}
-								continue;
+								Console.WriteLine($"You picked {rock}. Your opponent picked {rock}");
 							}
-							if (computerChoice > userChoice)
+							if (userChoice == paper && computerChoice == paper)
 							{
-								numberComputerWins++;
-								if (numberLoops == rounds)
-								{
-									break;
-								}
-								continue;
+								numberTie++;
+								Console.WriteLine($"You picked {paper}. Your opponent picked {paper}");
 							}
-							if (computerChoice < userChoice)
+							if (userChoice == scissors && computerChoice == scissors)
 							{
-								numberUserWins++;
-								if (numberLoops == rounds)
-								{
-									break;
-								}
-								continue;
+								numberTie++;
+								Console.WriteLine($"You picked {scissors}. Your opponent picked {scissors}");
 							}
+
+							//Paper wraps Rock to win
+							if ((computerChoice == paper && userChoice == rock) || (computerChoice == rock && userChoice == paper))
+							{
+								if (userChoice > computerChoice)
+								{
+									numberUserWins++;
+									Console.WriteLine($"You picked {paper}. Your opponent picked {rock}");
+								}
+								else
+								{
+									numberComputerWins++;
+									Console.WriteLine($"You picked {rock}. Your opponent picked {paper}");
+								}
+							}
+							//Scissors cut Paper to win
+							if ((computerChoice == paper && userChoice == scissors) || (computerChoice == scissors && userChoice == paper))
+							{
+								if (userChoice > computerChoice)
+								{
+									numberUserWins++;
+									Console.WriteLine($"You picked {scissors}. Your opponent picked {paper}");
+								}
+								else
+								{
+									numberComputerWins++;
+									Console.WriteLine($"You picked {paper}. Your opponent picked {scissors}");
+								}
+
+							}
+							//Rock breaks Scissors to win
+							if ((computerChoice == scissors && userChoice == rock) || (computerChoice == rock && userChoice == scissors))
+							{
+								if(userChoice < computerChoice)
+								{
+									numberUserWins++;
+									Console.WriteLine($"You picked {rock}. Your opponent picked {scissors}");
+								}
+								else
+								{
+									numberComputerWins++;
+									Console.WriteLine($"You picked {scissors}. Your opponent picked {rock}");
+								}
+								
+							}
+
+							if (numberLoops == rounds)
+							{
+								break;
+							}
+							continue;
 						}
 					}
-				}
-				Console.WriteLine("There are " + numberTie + " ties, " + numberUserWins + " user wins, and " + numberComputerWins + " computer wins.");
-				if (numberComputerWins > numberUserWins)
-				{
-					Console.WriteLine("Computer Wins!");
-				}
-				else if (numberUserWins > numberComputerWins)
-				{
-					Console.WriteLine("You Win!");
-				}
-				else
-				{
-					Console.WriteLine("It's a tie!");
-				}
-				Console.WriteLine("Do you want to play again? (y/n) ");
-				keepPlaying = Console.ReadLine();
-				if (keepPlaying.Equals("n"))
-				{
-					Console.WriteLine("Thanks for playing!");
-					return;
+					Console.WriteLine("There are " + numberTie + " ties, " + numberUserWins + " user wins, and " + numberComputerWins + " computer wins.");
+					if (numberComputerWins > numberUserWins)
+					{
+						Console.WriteLine("Computer Wins!");
+					}
+					else if (numberUserWins > numberComputerWins)
+					{
+						Console.WriteLine("You Win!");
+					}
+					else
+					{
+						Console.WriteLine("It's a tie!");
+					}
+
+					Console.WriteLine("Do you want to play again? (y/n) ");
+					keepPlaying = Console.ReadLine();
+					if (keepPlaying.Equals("n"))
+					{
+						Console.WriteLine("Thanks for playing!");
+						return;
+					}
 				}
 			}
 		}
 	}
 }
+
 
 //numberLoops++;
 //if (computerChoice > rock || computerChoice > paper || computerChoice > scissors)
