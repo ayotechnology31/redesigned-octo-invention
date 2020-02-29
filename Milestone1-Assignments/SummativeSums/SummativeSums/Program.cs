@@ -23,8 +23,6 @@ namespace SummativeSums
 			Console.WriteLine("#1 Array Sum: " + sum1);
 			Console.WriteLine("#2 Array Sum: " + sum2);
 			Console.WriteLine("#3 Array Sum: " + sum3);
-
-
 		}
 
 

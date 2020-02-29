@@ -75,17 +75,17 @@ namespace RockPaperScissors
 							if (userChoice == rock && computerChoice == rock)
 							{
 								numberTie++;
-								Console.WriteLine($"You picked {rock}. Your opponent picked {rock}");
+								Console.WriteLine($"You picked {rock}. Your opponent picked {rock}. It's a tie!");
 							}
 							if (userChoice == paper && computerChoice == paper)
 							{
 								numberTie++;
-								Console.WriteLine($"You picked {paper}. Your opponent picked {paper}");
+								Console.WriteLine($"You picked {paper}. Your opponent picked {paper}. It's a tie!");
 							}
 							if (userChoice == scissors && computerChoice == scissors)
 							{
 								numberTie++;
-								Console.WriteLine($"You picked {scissors}. Your opponent picked {scissors}");
+								Console.WriteLine($"You picked {scissors}. Your opponent picked {scissors}. It's a tie!");
 							}
 
 							//Paper wraps Rock to win
@@ -94,12 +94,12 @@ namespace RockPaperScissors
 								if (userChoice > computerChoice)
 								{
 									numberUserWins++;
-									Console.WriteLine($"You picked {paper}. Your opponent picked {rock}");
+									Console.WriteLine($"You picked {paper}. Your opponent picked {rock}. You win!");
 								}
 								else
 								{
 									numberComputerWins++;
-									Console.WriteLine($"You picked {rock}. Your opponent picked {paper}");
+									Console.WriteLine($"You picked {rock}. Your opponent picked {paper}. Computer wins!");
 								}
 							}
 							//Scissors cut Paper to win
@@ -108,12 +108,12 @@ namespace RockPaperScissors
 								if (userChoice > computerChoice)
 								{
 									numberUserWins++;
-									Console.WriteLine($"You picked {scissors}. Your opponent picked {paper}");
+									Console.WriteLine($"You picked {scissors}. Your opponent picked {paper}. You win!");
 								}
 								else
 								{
 									numberComputerWins++;
-									Console.WriteLine($"You picked {paper}. Your opponent picked {scissors}");
+									Console.WriteLine($"You picked {paper}. Your opponent picked {scissors}. Computer wins!");
 								}
 
 							}
@@ -123,14 +123,13 @@ namespace RockPaperScissors
 								if(userChoice < computerChoice)
 								{
 									numberUserWins++;
-									Console.WriteLine($"You picked {rock}. Your opponent picked {scissors}");
+									Console.WriteLine($"You picked {rock}. Your opponent picked {scissors}. You win!");
 								}
 								else
 								{
 									numberComputerWins++;
-									Console.WriteLine($"You picked {scissors}. Your opponent picked {rock}");
+									Console.WriteLine($"You picked {scissors}. Your opponent picked {rock}. Computer wins!");
 								}
-								
 							}
 
 							if (numberLoops == rounds)
