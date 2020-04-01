@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cookie\\source\\repos\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj": {}
+    "C:\\Users\\Cookie\\OneDrive\\Documents\\repos\\redesigned-octo-invention\\Lesson 04 Variables\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cookie\\source\\repos\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj": {
+    "C:\\Users\\Cookie\\OneDrive\\Documents\\repos\\redesigned-octo-invention\\Lesson 04 Variables\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cookie\\source\\repos\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj",
+        "projectUniqueName": "C:\\Users\\Cookie\\OneDrive\\Documents\\repos\\redesigned-octo-invention\\Lesson 04 Variables\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj",
         "projectName": "MenuOfChampions",
-        "projectPath": "C:\\Users\\Cookie\\source\\repos\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj",
+        "projectPath": "C:\\Users\\Cookie\\OneDrive\\Documents\\repos\\redesigned-octo-invention\\Lesson 04 Variables\\MenuOfChampions\\MenuOfChampions\\MenuOfChampions.csproj",
         "packagesPath": "C:\\Users\\Cookie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cookie\\source\\repos\\MenuOfChampions\\MenuOfChampions\\obj\\",
+        "outputPath": "C:\\Users\\Cookie\\OneDrive\\Documents\\repos\\redesigned-octo-invention\\Lesson 04 Variables\\MenuOfChampions\\MenuOfChampions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
