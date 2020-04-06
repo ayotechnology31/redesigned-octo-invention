@@ -5,31 +5,53 @@ using System.Text;
 
 namespace GolfClubManager.Data
 {
-	public class GolfClubRepository : GolfClub
+	public class GolfClubRepository 
 	{
-		//everything is interacting with line 10
-		List<GolfClub> golfClubs = new List<GolfClub>();
+		private List<GolfClub> golfClubs;
+
+		public GolfClubRepository()
+		{
+			golfClubs = new List<GolfClub>();
+		}
 		public void Create(GolfClub gcr)
 		{
 			golfClubs.Add(gcr);
 		}
 
-		public List<GolfClub> ReadAll(GolfClub gcc) 
+		public List<GolfClub> ReadAll() 
 		{
 			//how do i read from my list
-
-
-			return null;
+			return golfClubs;
 		}
 
-		public GolfClub ReadById()
+		public GolfClub ReadById(int id)
 		{
-			return null;
+			GolfClub retval = new GolfClub();
+
+			foreach(var club in golfClubs)
+			{
+				if(club.Id == id)
+				{
+					retval = club;
+					break;
+				}
+			}
+			return retval;
 		}
 		
 		public void Update(int id, GolfClub gc)
 		{
-
+			foreach(var club in golfClubs)
+			{
+				if(club.Id == id)
+				{
+					club.Id = gc.Id;
+					club.Name = gc.Name;
+					club.Year = gc.Year;
+					club.Rating = gc.Rating;
+					break;
+				}
+			}
 		}
 		
 		public void Delete(int id)
